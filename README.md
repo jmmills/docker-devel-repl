@@ -14,10 +14,10 @@ Enabled Plugins:
 $ docker pull jmmills/devel-repl
 $ docker run -t -i jmmills/devel-repl
 
-root@$container:/# cpanm Some::Silly::Module
+root@$container:/# cpanm Acme
 root@$container:/# re.pl
 
-$ use Some::Silly::Module
+$ use Acme
 $ my $a = [ 'one', 'two', 'three' ]
 $ARRAY1 = [
             'one',
