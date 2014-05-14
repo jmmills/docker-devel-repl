@@ -7,4 +7,6 @@ RUN cpanm Lexical/Persistence.pm
 RUN cpanm Data::Dump::Streamer
 RUN apt-get install libterm-readline-gnu-perl
 
+ADD repl.rc .re.pl/repl.rc
+
 CMD ["/bin/bash", "-l"]
