@@ -2,13 +2,14 @@ docker-devel-repl
 =================
 
 Devel::REPL on top of dist-zilla and plenv
+
 Enabled Plugins:
-	LexEnv
-	History
-	DumpHistory
-	Nopaste
-	Colors
-	Timing
+*	LexEnv
+*	History
+*	DumpHistory
+*	Nopaste
+*	Colors
+*	Timing
 
 ```
 $ docker pull jmmills/devel-repl
