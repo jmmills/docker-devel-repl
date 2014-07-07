@@ -9,4 +9,5 @@ RUN apt-get install libterm-readline-gnu-perl
 
 ADD repl.rc .re.pl/repl.rc
 
-CMD ["/bin/bash", "-l"]
+ENTRYPOINT ["/usr/local/bin/re.pl"]
+CMD [""]
