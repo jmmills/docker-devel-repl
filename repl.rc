@@ -1,4 +1,4 @@
-use Env qw[SHELL]
+use Env qw[SHELL];
 
 load_plugin('History');
 load_plugin('Timing');
@@ -8,6 +8,7 @@ load_plugin('Packages');
 load_plugin('Commands');
 load_plugin('MultiLine::PPI');
 load_plugin('Colors');
+load_plugin('Nopaste');
 
 sub shell {
   system( $SHELL? $SHELL : '/bin/bash' );
