@@ -60,3 +60,16 @@ always in a container.
     $ 1 + 1 Took 0.00048518180847168 seconds.
     2
     $ exit
+
+Or another way, extend the original image as your own sandbox build
+
+    $ cat Dockerfile 
+    FROM jmmills/devel-repl 
+    RUN cpanm Acme 
+    ENTRYPOINT ["/usr/local/bin/re.pl"] 
+    CMD [""]
+    $ docker build -t re.pl .
+    $ docker run -i -t --rm re.pl
+    $ use Acme
+    Took 0.00991296768188477 seconds.
+    $ exit
